@@ -77,7 +77,7 @@ def to_camel_case(underscore_str):
     """
     import re
     camelcase_str = ""
-    for word in re.sub("\_+", " ", input_string).split():
+    for word in re.sub("\_+", " ", underscore_str).split():
         camelcase_str += word[0].upper() + word[1:].lower()
 
     camelcase_str = camelcase_str[0].lower() + camelcase_str[1:]
