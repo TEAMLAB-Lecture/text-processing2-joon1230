@@ -39,7 +39,7 @@ def digits_to_words(input_string):
         digit = digit_dict.get(s,False)
         if digit:
             digit_string += digit+" "
-    return digit_string
+    return digit_string[:-1]
 
 
 """
